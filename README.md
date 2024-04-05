@@ -2,15 +2,6 @@
 
 ## 💻 Run the experiments
 
-### Get started:
-```bash
-# Make sure you have git-lfs installed (https://git-lfs.com)
-git lfs install
-
-# Clone repo
-git clone https://github.com/ml-jku/autoregressive_activity_prediction.git
-```
-
 ### Conda environment
 ```bash
 # Create conda environment
