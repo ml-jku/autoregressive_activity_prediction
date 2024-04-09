@@ -16,7 +16,6 @@ gdown https://drive.google.com/uc?id=1ZW1zzNEjrFmhCb4L0z2J2RWBOB9d3pAe
 unzip assets.zip
 ```
 
-https://drive.google.com/file/d/1ZW1zzNEjrFmhCb4L0z2J2RWBOB9d3pAe/view?usp=drive_link
 ### Conda environment
 ```bash
 # Create conda environment
