@@ -2,6 +2,21 @@
 
 ## 💻 Run the experiments
 
+### Clone repo
+```bash
+# Clone repo
+git clone https://github.com/ml-jku/autoregressive_activity_prediction.git
+
+# Move into dir
+cd ./autoregressive_activity_prediction
+
+# Download and unzip assets folder (~600 MB zipped, ~4 GB unzipped)
+pip install gdown
+gdown https://drive.google.com/uc?id=1ZW1zzNEjrFmhCb4L0z2J2RWBOB9d3pAe
+unzip assets.zip
+```
+
+https://drive.google.com/file/d/1ZW1zzNEjrFmhCb4L0z2J2RWBOB9d3pAe/view?usp=drive_link
 ### Conda environment
 ```bash
 # Create conda environment
