@@ -3,7 +3,7 @@ This file includes the dataloader which provides the data for the autoregressive
 inference experiment.
 The tasks are the ones included in the FS-Mol test set.
 
-For each task, the available  available datapoints, i.e. a molecular structure with
+For each task, the available datapoints, i.e. a molecular structure with
 associated labels, are split into a) a (initial) support set, b) a support set
 candidates set, and c) an evaluation set:
 
