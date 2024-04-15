@@ -22,7 +22,7 @@ gdown https://drive.google.com/uc?id=1SEi8dkkdXudWzRFAYABBckk12tNWfGtX
 unzip preprocessed_data
 ```
 ### Update paths in config
-```hydra
+```yaml
 # config location: .src/autoregr_inf_experiment/cfg.py
 
 # Base settings
