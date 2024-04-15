@@ -2,7 +2,7 @@
 
 ## 💻 Run the experiments
 
-### Clone repo
+### Clone repo and download data
 ```bash
 # Clone repo
 git clone https://github.com/ml-jku/autoregressive_activity_prediction.git
@@ -14,7 +14,33 @@ cd ./autoregressive_activity_prediction
 pip install gdown
 gdown https://drive.google.com/uc?id=1ZW1zzNEjrFmhCb4L0z2J2RWBOB9d3pAe
 unzip assets.zip
+
+# Download and unzip preprocessed fsmol data (~400 MB zipped, ~5 GB unzipped)
+# Move to location at which data should be stored
+cd path_to_preprocessed_fsmol_data_dir
+gdown https://drive.google.com/uc?id=1SEi8dkkdXudWzRFAYABBckk12tNWfGtX
+unzip preprocessed_data
 ```
+### Update paths in config
+```hydra
+# config location: .src/autoregr_inf_experiment/cfg.py
+
+# Base settings
+    seed: int = 1234
+    
+    # Data
+    data_path: str = "path_to_preprocessed_fsmol_data_dir" #TODO set path
+    nbr_support_set_candidates: int = 32
+    inference_batch_size: int = 64
+    
+    # Experiment
+    device='gpu'
+    
+    # Results
+    results_path: str = "" #TODO set path
+...
+```
+
 
 ### Conda environment
 ```bash
